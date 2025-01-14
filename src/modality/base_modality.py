@@ -1,1 +1,1 @@
-
+# Base class for modality
