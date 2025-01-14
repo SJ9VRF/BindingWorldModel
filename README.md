@@ -7,7 +7,7 @@ MultiModal Binding for World Modeling
 The BindingWorldModel approach integrates multimodal data to construct coherent world models by leveraging cross-modal attention mechanisms and latent-space alignment. Using contrastive transformer-based architectures, it binds visual, textual, and sensor data into unified latent representations,  enhancing physical intelligence, perception, and interaction. 
 
 
-## 1. Modular Progressive Training Process for Multimodal Binding Overview
+## Modular Progressive Training Process for Multimodal Binding Overview
 
 
 ### Contrastive Learning
@@ -18,7 +18,7 @@ The BindingWorldModel approach integrates multimodal data to construct coherent 
 
 ---
 
-## 2. Process Overview
+## Process Overview
 
 ### Initialization
 - Create modality-specific encoders (e.g., BERT for text, ResNet for images, Wav2Vec2 for audio).
@@ -39,7 +39,7 @@ The BindingWorldModel approach integrates multimodal data to construct coherent 
 
 ---
 
-## 3. Modular Components
+## Modular Components
 
 ### Base Modality
 - A generic class (`BaseModality`) defines the interface for all modality-specific encoders. Each encoder (e.g., text, image) implements its own logic.
@@ -64,7 +64,7 @@ The BindingWorldModel approach integrates multimodal data to construct coherent 
 
 ---
 
-## 4. Training Phases
+## Training Phases
 
 ### Phase 1: Text-Other Modality Pairs
 - Train the model using simpler pairs like:
@@ -79,7 +79,7 @@ The BindingWorldModel approach integrates multimodal data to construct coherent 
 
 ---
 
-## 5. Training Workflow
+## Training Workflow
 
 ### Prepare Data
 - Organize labeled data for each pair of modalities (e.g., text-image pairs, image-audio pairs).
@@ -98,7 +98,7 @@ The BindingWorldModel approach integrates multimodal data to construct coherent 
 
 ---
 
-## 6. Example: Text-Image Phase
+## Example: Text-Image Phase
 
 ### Input
 - **Text**: "A cat sitting on a sofa."
@@ -111,7 +111,7 @@ The BindingWorldModel approach integrates multimodal data to construct coherent 
 
 ---
 
-## 7. Example: Image-Audio Phase
+## Example: Image-Audio Phase
 
 ### Input
 - **Image**: A dog running.
@@ -123,8 +123,6 @@ The BindingWorldModel approach integrates multimodal data to construct coherent 
 3. **Contrastive Loss** aligns these embeddings in the shared space.
 
 ---
-
-## 8. Why it is helpful?
 
 1. **Scalability**:
    - New modalities can be added without affecting existing components.
