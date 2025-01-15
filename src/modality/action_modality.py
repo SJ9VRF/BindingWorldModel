@@ -1,1 +1,1 @@
-
+# Action sequence processing class
