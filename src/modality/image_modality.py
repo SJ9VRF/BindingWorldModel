@@ -1,1 +1,1 @@
-
+# Image processing class
